@@ -7,7 +7,7 @@ from test import data
 
 def get_release():
     url = "https://api.github.com/repos/clash-verge-rev/clash-verge-rev/releases"
-    return requests.get(url).json()[0]
+    return requests.get(url).json()[1]
 
 def parse_arch(filename):
     if "amd64" in filename or "x86_64" in filename or "x64" in filename:
